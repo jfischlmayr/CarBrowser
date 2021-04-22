@@ -47,7 +47,8 @@
 
         <Button Grid.Column="3" Grid.Row="3">Edit</Button>
 
-        <ComboBox Grid.Column="2" />
+        <ComboBox Grid.Column="2" SelectedItem="{Binding CurrentCar}" ItemsSource="{Binding Cars}"
+                  DisplayMemberPath="Name"/>
 
         <TextBlock Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" 
                    Style="{StaticResource Hero}" Text="{Binding CurrentCar.Name}"/>
