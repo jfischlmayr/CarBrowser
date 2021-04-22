@@ -26,7 +26,7 @@ namespace CarBrowser
 
         private void OnClose(object sender, RoutedEventArgs e)
         {
-            Hide();
+            Close();
         }
     }
 }
