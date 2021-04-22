@@ -78,5 +78,12 @@ namespace CarBrowser
                 CurrentCar = Cars[currentCarIndex + 1];
             }
         }
+
+        private void OnEdit(object sender, RoutedEventArgs e)
+        {
+            var dialog = new EditCarWindow();
+            dialog.DataContext = CurrentCar;
+            dialog.ShowDialog();
+        }
     } 
 }
